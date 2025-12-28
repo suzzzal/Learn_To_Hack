@@ -1,0 +1,68 @@
+NAME
+
+cp – copy files and directories
+
+SYNTAX
+cp [OPTION]... SOURCE  DEST
+cp [OPTION]... SOURCE... DIRECTORY
+
+DESCRIPTION
+
+cp copies files and directories from SOURCE to DESTINATION.
+If multiple source files are given, the destination must be a directory.
+
+IMPORTANT FLAGS
+-a, --archive        copy recursively and preserve attributes
+-b, --backup         make a backup of each existing destination file
+-f, --force          remove existing destination files without prompt
+-i, --interactive    prompt before overwrite
+-l, --link           create hard links instead of copying
+-r, -R, --recursive  copy directories recursively
+-p, --preserve       preserve mode, ownership, timestamps
+-u, --update         copy only when SOURCE is newer than DEST
+-v, --verbose        explain what is being done
+--help               display help and exit
+--version            output version information and exit
+
+USAGE
+1. Copy a file
+cp file1.txt file2.txt
+
+
+Output: file1.txt is copied to file2.txt
+
+2. Copy multiple files to a directory
+cp file1.txt file2.txt backup/
+
+
+Output: both files are copied into backup/
+
+3. Copy a directory (recursively)
+cp -r project/ project_backup/
+
+
+Output: entire directory is copied
+
+4. Copy with confirmation before overwrite
+cp -i file.txt dest.txt
+
+
+Output: asks before overwriting dest.txt
+
+5. Copy only updated files
+cp -u source.txt dest.txt
+
+
+Output: copies only if source.txt is newer
+
+6. Preserve file attributes
+cp -p file.txt backup.txt
+
+
+Output: permissions, ownership, timestamps preserved
+
+7. Show copy process
+cp -v file.txt backup.txt
+
+
+Output: displays each copy operation
