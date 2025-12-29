@@ -1,8 +1,5 @@
 'pwd' stands for present working directory.
-
-This helps the user disaply the full path of whatever directory they are working in from the root directory
-
+With this command the user can disaply the full path of whatever directory they are working in from the root directory
 This has two flags:
    '-L' (logical) this obtains the symbolic path of a directory (if the path contains a symbolic link)
    '-P' (physical) this obtains the actual path, ignoring any symbolic links
-
