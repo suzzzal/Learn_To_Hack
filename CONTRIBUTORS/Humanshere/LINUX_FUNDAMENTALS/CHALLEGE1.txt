@@ -2,4 +2,6 @@ grep_is_good_to_find_things_cEDf1591
 
 grep -o "geek{.*}" file
 
+grep is used for searching plain-text data for lines that match a specific pattern. Pattern here is to find geek{ and the content in between the brackets.
+
 proof- https://drive.google.com/file/d/1mPmu36Q8yprmp3ZOyp8MlQmHy8KF27F9/view?usp=sharing
