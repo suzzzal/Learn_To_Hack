@@ -1,0 +1,5 @@
+Flag: geek{EveryOne_Loves_Maggi}
+
+Found using: strings command, which was used to analyze readable embedded data inside the PNG file. The flag was discovered in the image metadata (tEXt chunk).
+
+link- https://drive.google.com/drive/folders/1W2g4XsJtCLp8zOxqU_bUiN9FpjaChSB1?usp=drive_link
